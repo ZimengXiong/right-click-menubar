@@ -1,0 +1,24 @@
+{
+  "originHash" : "c059e8287f017d82767571fe7d8844343fc4f4375908d6a809fc70de26f61ef5",
+  "pins" : [
+    {
+      "identity" : "keyboardshortcuts",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/sindresorhus/KeyboardShortcuts",
+      "state" : {
+        "revision" : "045cf174010beb335fa1d2567d18c057b8787165",
+        "version" : "2.3.0"
+      }
+    },
+    {
+      "identity" : "settingsaccess",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/orchetect/SettingsAccess",
+      "state" : {
+        "revision" : "08e80c35501f273afa2f5d6f737429bbe395ff81",
+        "version" : "2.1.0"
+      }
+    }
+  ],
+  "version" : 3
+}
