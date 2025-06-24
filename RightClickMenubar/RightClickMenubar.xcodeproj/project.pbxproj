@@ -7,47 +7,47 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3314FE4A2E09CE5100155C01 /* SettingsAccess in Frameworks */ = {isa = PBXBuildFile; productRef = 3314FE492E09CE5100155C01 /* SettingsAccess */; };
-		3314FE4D2E09CE7C00155C01 /* KeyboardShortcuts in Frameworks */ = {isa = PBXBuildFile; productRef = 3314FE4C2E09CE7C00155C01 /* KeyboardShortcuts */; };
+		33D009DA2E0B7DE1003698E5 /* KeyboardShortcuts in Frameworks */ = {isa = PBXBuildFile; productRef = 33D009D92E0B7DE1003698E5 /* KeyboardShortcuts */; };
+		33D009DD2E0B7DE8003698E5 /* SettingsAccess in Frameworks */ = {isa = PBXBuildFile; productRef = 33D009DC2E0B7DE8003698E5 /* SettingsAccess */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3305B15D2E09C5F400E45965 /* Right Click Menubar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Right Click Menubar.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		33D009AB2E0B7D90003698E5 /* RightClickMenubar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RightClickMenubar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		3305B15F2E09C5F400E45965 /* Right Click Menubar */ = {
+		33D009AD2E0B7D90003698E5 /* RightClickMenubar */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "Right Click Menubar";
+			path = RightClickMenubar;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		3305B15A2E09C5F300E45965 /* Frameworks */ = {
+		33D009A82E0B7D90003698E5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3314FE4A2E09CE5100155C01 /* SettingsAccess in Frameworks */,
-				3314FE4D2E09CE7C00155C01 /* KeyboardShortcuts in Frameworks */,
+				33D009DA2E0B7DE1003698E5 /* KeyboardShortcuts in Frameworks */,
+				33D009DD2E0B7DE8003698E5 /* SettingsAccess in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3305B1542E09C5F300E45965 = {
+		33D009A22E0B7D90003698E5 = {
 			isa = PBXGroup;
 			children = (
-				3305B15F2E09C5F400E45965 /* Right Click Menubar */,
-				3305B15E2E09C5F400E45965 /* Products */,
+				33D009AD2E0B7D90003698E5 /* RightClickMenubar */,
+				33D009AC2E0B7D90003698E5 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		3305B15E2E09C5F400E45965 /* Products */ = {
+		33D009AC2E0B7D90003698E5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3305B15D2E09C5F400E45965 /* Right Click Menubar.app */,
+				33D009AB2E0B7D90003698E5 /* RightClickMenubar.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -55,70 +55,70 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		3305B15C2E09C5F300E45965 /* Right Click Menubar */ = {
+		33D009AA2E0B7D90003698E5 /* RightClickMenubar */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3305B1692E09C5F400E45965 /* Build configuration list for PBXNativeTarget "Right Click Menubar" */;
+			buildConfigurationList = 33D009B72E0B7D91003698E5 /* Build configuration list for PBXNativeTarget "RightClickMenubar" */;
 			buildPhases = (
-				3305B1592E09C5F300E45965 /* Sources */,
-				3305B15A2E09C5F300E45965 /* Frameworks */,
-				3305B15B2E09C5F300E45965 /* Resources */,
+				33D009A72E0B7D90003698E5 /* Sources */,
+				33D009A82E0B7D90003698E5 /* Frameworks */,
+				33D009A92E0B7D90003698E5 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				3305B15F2E09C5F400E45965 /* Right Click Menubar */,
+				33D009AD2E0B7D90003698E5 /* RightClickMenubar */,
 			);
-			name = "Right Click Menubar";
+			name = RightClickMenubar;
 			packageProductDependencies = (
-				3314FE492E09CE5100155C01 /* SettingsAccess */,
-				3314FE4C2E09CE7C00155C01 /* KeyboardShortcuts */,
+				33D009D92E0B7DE1003698E5 /* KeyboardShortcuts */,
+				33D009DC2E0B7DE8003698E5 /* SettingsAccess */,
 			);
-			productName = "Right Click Menubar";
-			productReference = 3305B15D2E09C5F400E45965 /* Right Click Menubar.app */;
+			productName = RightClickMenubar;
+			productReference = 33D009AB2E0B7D90003698E5 /* RightClickMenubar.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		3305B1552E09C5F300E45965 /* Project object */ = {
+		33D009A32E0B7D90003698E5 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1630;
 				LastUpgradeCheck = 1630;
 				TargetAttributes = {
-					3305B15C2E09C5F300E45965 = {
+					33D009AA2E0B7D90003698E5 = {
 						CreatedOnToolsVersion = 16.3;
 					};
 				};
 			};
-			buildConfigurationList = 3305B1582E09C5F300E45965 /* Build configuration list for PBXProject "Right Click Menubar" */;
+			buildConfigurationList = 33D009A62E0B7D90003698E5 /* Build configuration list for PBXProject "RightClickMenubar" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = 3305B1542E09C5F300E45965;
+			mainGroup = 33D009A22E0B7D90003698E5;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				3314FE482E09CE5100155C01 /* XCRemoteSwiftPackageReference "SettingsAccess" */,
-				3314FE4B2E09CE7C00155C01 /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */,
+				33D009D82E0B7DE1003698E5 /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */,
+				33D009DB2E0B7DE8003698E5 /* XCRemoteSwiftPackageReference "SettingsAccess" */,
 			);
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 3305B15E2E09C5F400E45965 /* Products */;
+			productRefGroup = 33D009AC2E0B7D90003698E5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3305B15C2E09C5F300E45965 /* Right Click Menubar */,
+				33D009AA2E0B7D90003698E5 /* RightClickMenubar */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		3305B15B2E09C5F300E45965 /* Resources */ = {
+		33D009A92E0B7D90003698E5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -128,7 +128,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		3305B1592E09C5F300E45965 /* Sources */ = {
+		33D009A72E0B7D90003698E5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -138,7 +138,7 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		3305B1672E09C5F400E45965 /* Debug */ = {
+		33D009B52E0B7D91003698E5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -202,7 +202,7 @@
 			};
 			name = Debug;
 		};
-		3305B1682E09C5F400E45965 /* Release */ = {
+		33D009B62E0B7D91003698E5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -258,12 +258,13 @@
 			};
 			name = Release;
 		};
-		3305B16A2E09C5F400E45965 /* Debug */ = {
+		33D009B82E0B7D91003698E5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "Right Click Menubar/Right_Click_Menubar.entitlements";
+				CODE_SIGN_ENTITLEMENTS = RightClickMenubar/RightClickMenubar.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -277,7 +278,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ZimengXiong.Right-Click-Menubar";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ZimengXiong..RightClickMenubar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -285,12 +286,13 @@
 			};
 			name = Debug;
 		};
-		3305B16B2E09C5F400E45965 /* Release */ = {
+		33D009B92E0B7D91003698E5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "Right Click Menubar/Right_Click_Menubar.entitlements";
+				CODE_SIGN_ENTITLEMENTS = RightClickMenubar/RightClickMenubar.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -304,7 +306,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ZimengXiong.Right-Click-Menubar";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ZimengXiong..RightClickMenubar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -315,20 +317,20 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3305B1582E09C5F300E45965 /* Build configuration list for PBXProject "Right Click Menubar" */ = {
+		33D009A62E0B7D90003698E5 /* Build configuration list for PBXProject "RightClickMenubar" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3305B1672E09C5F400E45965 /* Debug */,
-				3305B1682E09C5F400E45965 /* Release */,
+				33D009B52E0B7D91003698E5 /* Debug */,
+				33D009B62E0B7D91003698E5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3305B1692E09C5F400E45965 /* Build configuration list for PBXNativeTarget "Right Click Menubar" */ = {
+		33D009B72E0B7D91003698E5 /* Build configuration list for PBXNativeTarget "RightClickMenubar" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3305B16A2E09C5F400E45965 /* Debug */,
-				3305B16B2E09C5F400E45965 /* Release */,
+				33D009B82E0B7D91003698E5 /* Debug */,
+				33D009B92E0B7D91003698E5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -336,15 +338,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		3314FE482E09CE5100155C01 /* XCRemoteSwiftPackageReference "SettingsAccess" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/orchetect/SettingsAccess";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 2.1.0;
-			};
-		};
-		3314FE4B2E09CE7C00155C01 /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */ = {
+		33D009D82E0B7DE1003698E5 /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/sindresorhus/KeyboardShortcuts";
 			requirement = {
@@ -352,20 +346,28 @@
 				minimumVersion = 2.3.0;
 			};
 		};
+		33D009DB2E0B7DE8003698E5 /* XCRemoteSwiftPackageReference "SettingsAccess" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/orchetect/SettingsAccess";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.1.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		3314FE492E09CE5100155C01 /* SettingsAccess */ = {
+		33D009D92E0B7DE1003698E5 /* KeyboardShortcuts */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 3314FE482E09CE5100155C01 /* XCRemoteSwiftPackageReference "SettingsAccess" */;
-			productName = SettingsAccess;
-		};
-		3314FE4C2E09CE7C00155C01 /* KeyboardShortcuts */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 3314FE4B2E09CE7C00155C01 /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */;
+			package = 33D009D82E0B7DE1003698E5 /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */;
 			productName = KeyboardShortcuts;
+		};
+		33D009DC2E0B7DE8003698E5 /* SettingsAccess */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 33D009DB2E0B7DE8003698E5 /* XCRemoteSwiftPackageReference "SettingsAccess" */;
+			productName = SettingsAccess;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
-	rootObject = 3305B1552E09C5F300E45965 /* Project object */;
+	rootObject = 33D009A32E0B7D90003698E5 /* Project object */;
 }

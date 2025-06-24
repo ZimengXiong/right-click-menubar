@@ -21,14 +21,18 @@ struct PreferencesView: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 20) {
         
-            Picker("Trigger Method", selection: $triggerMode) {
-                ForEach(TriggerMode.allCases) { mode in
-                    Text(mode.rawValue).tag(mode)
+            if #available(macOS 14.0, *) {
+                Picker("Trigger Method", selection: $triggerMode) {
+                    ForEach(TriggerMode.allCases) { mode in
+                        Text(mode.rawValue).tag(mode)
+                    }
                 }
-            }
-            .pickerStyle(RadioGroupPickerStyle())
-            .onChange(of: triggerMode) {
-                NotificationCenter.default.post(name: .settingsChanged, object: nil)
+                .pickerStyle(RadioGroupPickerStyle())
+                .onChange(of: triggerMode) {
+                    NotificationCenter.default.post(name: .settingsChanged, object: nil)
+                }
+            } else {
+                // Fallback on earlier versions
             }
 
             Divider()

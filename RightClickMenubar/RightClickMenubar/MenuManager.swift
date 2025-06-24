@@ -65,6 +65,7 @@ class MenuManager: NSObject, NSMenuDelegate, NSMenuItemValidation {
     }
     
     private func setupKeyboardEventTap() {
+        print("[DEBUG] setupKeyboardEventTap called")
         let eventMask = (1 << CGEventType.keyDown.rawValue)
         let eventTap = CGEvent.tapCreate(
             tap: .cgSessionEventTap,
@@ -75,6 +76,7 @@ class MenuManager: NSObject, NSMenuDelegate, NSMenuItemValidation {
                 guard type == .keyDown else { return Unmanaged.passUnretained(event) }
                 let manager = Unmanaged<MenuManager>.fromOpaque(refcon!).takeUnretainedValue()
                 if manager.isTriggeringKeyEvent(event) {
+                    print("[DEBUG] Menu triggered by keyboard shortcut")
                     DispatchQueue.main.async {
                         manager.handleTrigger()
                     }
@@ -85,23 +87,32 @@ class MenuManager: NSObject, NSMenuDelegate, NSMenuItemValidation {
             userInfo: UnsafeMutableRawPointer(Unmanaged.passUnretained(self).toOpaque())
         )
         if let eventTap = eventTap {
+            print("[DEBUG] Keyboard event tap created successfully")
             self.eventTap = eventTap
             let runLoopSource = CFMachPortCreateRunLoopSource(kCFAllocatorDefault, eventTap, 0)
             self.runLoopSource = runLoopSource
             CFRunLoopAddSource(CFRunLoopGetCurrent(), runLoopSource, .commonModes)
+        } else {
+            print("[ERROR] Failed to create keyboard event tap. Check permissions in Accessibility and Input Monitoring.")
+            showPermissionsAlert()
         }
     }
     
     private func isTriggeringKeyEvent(_ event: CGEvent) -> Bool {
-        guard let shortcut = KeyboardShortcuts.getShortcut(for: .rightClick), let key = shortcut.key else { return false }
+        guard let shortcut = KeyboardShortcuts.getShortcut(for: .rightClick), let key = shortcut.key else {
+            print("[DEBUG] No shortcut set or key missing")
+            return false
+        }
         let keyCode = event.getIntegerValueField(.keyboardEventKeycode)
         let eventFlags = NSEvent.ModifierFlags(rawValue: UInt(event.flags.rawValue)).intersection(.deviceIndependentFlagsMask)
         let eventFlagsInt = Int(eventFlags.rawValue)
         let shortcutFlagsInt = Int(shortcut.modifiers.rawValue)
+        print("[DEBUG] Key event: keyCode=\(keyCode), eventFlags=\(eventFlagsInt), shortcutKey=\(key.rawValue), shortcutFlags=\(shortcutFlagsInt)")
         return keyCode == key.rawValue && eventFlagsInt == shortcutFlagsInt
     }
     
     private func setupMouseEventTap() {
+        print("[DEBUG] setupMouseEventTap called")
         let eventMask = (1 << CGEventType.rightMouseDown.rawValue)
         let eventTap = CGEvent.tapCreate(
             tap: .cgSessionEventTap,
@@ -112,6 +123,7 @@ class MenuManager: NSObject, NSMenuDelegate, NSMenuItemValidation {
                 guard type == .rightMouseDown else { return Unmanaged.passUnretained(event) }
                 let manager = Unmanaged<MenuManager>.fromOpaque(refcon!).takeUnretainedValue()
                 if manager.isTriggeringMouseEvent(event) {
+                    print("[DEBUG] Menu triggered by mouse (right click + modifiers)")
                     DispatchQueue.main.async {
                         manager.handleTrigger()
                     }
@@ -122,10 +134,14 @@ class MenuManager: NSObject, NSMenuDelegate, NSMenuItemValidation {
             userInfo: UnsafeMutableRawPointer(Unmanaged.passUnretained(self).toOpaque())
         )
         if let eventTap = eventTap {
+            print("[DEBUG] Mouse event tap created successfully")
             self.eventTap = eventTap
             let runLoopSource = CFMachPortCreateRunLoopSource(kCFAllocatorDefault, eventTap, 0)
             self.runLoopSource = runLoopSource
             CFRunLoopAddSource(CFRunLoopGetCurrent(), runLoopSource, .commonModes)
+        } else {
+            print("[ERROR] Failed to create mouse event tap. Check permissions in Accessibility and Input Monitoring.")
+            showPermissionsAlert()
         }
     }
 
@@ -143,6 +159,14 @@ class MenuManager: NSObject, NSMenuDelegate, NSMenuItemValidation {
         alert.addButton(withTitle: "OK")
         alert.runModal()
     }
+    private func showPermissionsAlert() {
+        let alert = NSAlert()
+        alert.messageText = "Permissions Required"
+        alert.informativeText = "This app needs both Accessibility and Input Monitoring permissions to function.\n\nPlease enable them in System Settings > Privacy & Security > Accessibility and Input Monitoring."
+        alert.addButton(withTitle: "OK")
+        alert.runModal()
+    }
+
     private struct MenuNode {
         let title: String
         let role: String

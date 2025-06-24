@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleIdentifier</key>
+	<string>com.ZimengXiong.Right-Click-Menubar</string>
+	<key>NSHumanReadableCopyright</key>
+	<string>All Content Copyright Zimeng Xiong</string>
+	<key>NSAccessibilityUsageDescription</key>
+	<string>This app needs to access the menu bar of other applications to display them at your cursor.</string>
+	<key>LSUIElement</key>
+	<true/>
+</dict>
+</plist>

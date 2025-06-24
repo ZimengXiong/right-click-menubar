@@ -1,5 +1,5 @@
 //
-//  Right_Click_MenubarApp.swift
+//  RightClickMenubarApp.swift
 //  Right Click Menubar
 //
 //  Created by Zimeng Xiong on 6/23/25.
@@ -13,7 +13,7 @@ extension KeyboardShortcuts.Name {
 }
 
 @main
-struct Right_Click_MenubarApp: App {
+struct RightClickMenubarApp: App {
     @NSApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
 
     var body: some Scene {
