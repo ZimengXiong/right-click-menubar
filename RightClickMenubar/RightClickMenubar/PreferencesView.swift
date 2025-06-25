@@ -2,6 +2,8 @@
 //  PreferencesView.swift
 //  Right Click Menubar
 //
+//  All Content Copyright 2025 Zimeng Xiong.
+//  All rights reserved.
 //  Created by Zimeng Xiong on 6/23/25.
 //
 
